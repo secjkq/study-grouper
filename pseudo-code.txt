@@ -1,0 +1,39 @@
+START
+
+LOAD Excel file
+READ columns: Surname, Location, IT_Experience
+
+CREATE list ALL_STUDENTS
+CREATE list DIGITAL_NATIVES
+CREATE list NON_DIGITAL_NATIVES
+
+FOR each student in ALL_STUDENTS:
+    IF IT_Experience == "Digital Native: Grew up in the digital age, highly proficient with technology.":
+        ADD student to DIGITAL_NATIVES
+    ELSE:
+        ADD student to NON_DIGITAL_NATIVES
+
+CREATE empty list GROUPS
+
+WHILE there are students not assigned to a group:
+
+    CREATE new GROUP
+    
+    ADD 2 students from DIGITAL_NATIVES to GROUP
+    REMOVE those students from DIGITAL_NATIVES
+    
+    WHILE GROUP size < 5 AND there are remaining students:
+        
+        FOR each remaining student:
+            CALCULATE distance between student and all members of GROUP using Google Maps
+            
+            IF distance <= 12 km for all members:
+                ADD student to GROUP
+                REMOVE student from available students
+                BREAK
+    
+    ADD GROUP to GROUPS
+
+OUTPUT GROUPS using surnames
+
+END
