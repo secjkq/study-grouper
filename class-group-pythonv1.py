@@ -10,7 +10,7 @@ data = pd.read_excel('Class-group-coding.xlsx')
 native_students = data[data['IT Experience'] == 'Digital Native']
 
 # Initialize Google Maps API client
-gmaps = googlemaps.Client(key='AIzaSyCJ7e4KG3NiRnAP1WU99WB01Mbq_8qOBAE')
+gmaps = googlemaps.Client(key='AIzaSy********BAE') #INSERT YOUR API KEY HERE
 
 # Function to calculate distance between two locations
 def calculate_distance(location1, location2):
