@@ -57,17 +57,17 @@ Outputs groups using student surnames
 ** Example Use Cases**
 This system can be adapted for:
 
-🎓 Study & project groups
+** Study & project groups
 
-🏢 Workplace team formation
+** Workplace team formation
 
-🚑 Emergency response teams
+** Emergency response teams
 
-🌍 Community & NGO programs
+** Community & NGO programs
 
-🎤 Event & hackathon groups
+** Event & hackathon groups
 
-🏃 Local sports or fitness groups
+** Local sports or fitness groups
 
 Anywhere you need small, local, skill-balanced teams.
 
@@ -76,7 +76,7 @@ Anywhere you need small, local, skill-balanced teams.
 Install dependencies:
 1. **pip install pandas requests**
 
-2. 🔑 Google Maps API
+2.  Google Maps API
 
 Create an API key at:
 https://developers.google.com/maps
@@ -116,7 +116,7 @@ Extend use cases
 
 Pull requests are welcome!
 
-📜 License
+** License
 
 Open-source for learning, experimentation, and community use.
 
